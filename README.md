@@ -39,6 +39,7 @@ Borrow out = A'Bin + A'B + BBin
 **Truthtable**
 
 **Procedure**
+
 1.Open Quartus Software
 2.Create a New Project
 3.Create a New Design File
@@ -48,10 +49,13 @@ Borrow out = A'Bin + A'B + BBin
 7.Generate Timing Diagram
 8.Simulate Different Input Combinations
 9.Save Your Work
-**Program:**
 
-/* Developed by: jenil pio j
+**Program:**
+```
+Developed by: jenil pio j
 RegisterNumber:212223220040
+```
+```
 Full adder: 
 
 module proj_41(a,b,cin,sum,carry);
@@ -60,7 +64,9 @@ output sum, carry;
 assign sum=(a^b^cin);
 assign carry=((a&b)|(b&cin)|(cin&a));
 endmodule
+```
 
+```
 ##Full Subtractor:
 
 module proj_42(a,b,bin,borr,diff);
@@ -69,7 +75,8 @@ output diff, borr;
 assign diff=(a^b^bin);
 assign borr=((~a&b)|(b&bin)|(bin&~a));
 endmodule
-*/
+```
+
 
 ##  FULL ADDER:
 ![image](https://github.com/user-attachments/assets/403d7f51-25b9-415b-b9ce-6d612cdb48c3)
